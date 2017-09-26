@@ -8,7 +8,8 @@
   <select name="statesList" form="states">
   <?php
   try {
-    $db = new PDO('mysql:dbname=challenge;host=localhost', 'root', 'root');
+      //creating a new pdo connection
+    $db = new PDO('mysql:dbname=vechevarria_challenge;host=localhost', 'r2hstudent', 'SbFaGzNgGIE8kfP');
     $eachState = 'SELECT state_name FROM States';
     //For each result of query ($eachState, which will return everything in the table) make it $state and echo it as an option.
     foreach($db->query($eachState) as $state) {
